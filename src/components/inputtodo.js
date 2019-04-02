@@ -10,7 +10,6 @@ class Input extends Component{
         this.handlesubmit = this.handlesubmit.bind(this);
     }
     handleinput(event){
-
         const {value} = event.target;
 
         this.setState({
