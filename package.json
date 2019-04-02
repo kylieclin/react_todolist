@@ -2,6 +2,11 @@
   "name": "react_starter",
   "version": "1.0.0",
   "description": "Starting setup for react redux project",
+  "proxy":{
+    "/api/*":{
+      "target": "http://localhost:3001"
+    }
+  },
   "main": "index.js",
   "scripts": {
     "start": "node dev_server.js",
@@ -15,6 +20,9 @@
     "url": "https://github.com/Learning-Fuze/react_starter.git"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "materialize": "^1.0.0",
+    "materialize-css": "^1.0.0-rc.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
