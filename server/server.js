@@ -34,7 +34,7 @@ server.post('/api/todo_items',(req, res)=>{
                 success: false,
                 message: 'must add items into todolist'
             })
-            break;
+            return;
         }
 
         const query = 'INSERT INTO `todo_items` SET `title`="'+req.body.todo+'"';
@@ -62,7 +62,7 @@ server.delete('/api/todo_items/:id',(req,res)=>{
                 success: false,
                 message: 'must have an id to delete item'
             })
-            break;
+            return;
         }
 
         const query = 'DELETE FROM `todo_items` WHERE `id`='+req.params.id;
