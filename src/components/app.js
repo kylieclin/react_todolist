@@ -3,8 +3,8 @@ import 'materialize-css/dist/js/materialize.min';
 import React, {Component} from 'react';
 import axios from 'axios';
 import '../assets/css/app.scss';
-import Todolist from './todolist';
-import Input from './inputtodo';
+import Todolist from './todolist/todolist';
+import Input from './todoinput/inputtodo';
 
 class App extends Component{
     constructor(props){
