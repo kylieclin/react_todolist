@@ -19,6 +19,7 @@ class App extends Component{
         this.getData();
     }
     async getData(){
+        debugger;
         const resp = await axios.get('/api/todo_items');
         console.log(resp.data.data)
         try{
